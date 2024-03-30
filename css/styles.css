@@ -262,7 +262,6 @@ button:focus {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
 }
@@ -287,7 +286,6 @@ button:focus {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
@@ -321,9 +319,6 @@ button:focus {
 }
 
 .team-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
   padding-bottom: 8px;
 }
@@ -404,12 +399,6 @@ button:focus {
   background-color: #4d5ae5;
   display: flex;
   align-items: center;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
 }
 
@@ -435,7 +424,6 @@ button:focus {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
@@ -494,11 +482,7 @@ button:focus {
 }
 
 .footer-social-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
 }
@@ -532,11 +516,7 @@ button:focus {
 }
 
 .footer-right-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
 }
@@ -582,7 +562,6 @@ input::placeholder {
 
 .footer-right-button {
   font-weight: 500;
-  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
@@ -820,3 +799,31 @@ input[type="checkbox"]:checked
 }
 
 /* #endregion modal window */
+
+/* #region Mobile */
+
+.container {
+  width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+/* #endregion Mobile */
+
+/* #region Table */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+/* #endregion Mobile */
+
+/* #region PC */
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+  }
+}
+/* #endregion PC */
