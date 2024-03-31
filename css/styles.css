@@ -50,11 +50,11 @@ address {
 }
 /* #endregion add reset*/
 
-.container {
+/* .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-}
+} */
 
 /* #region header */
 
@@ -772,7 +772,7 @@ input::placeholder {
 input[type="checkbox"]:checked + .privacy .privacy-checkbox {
   fill: #f4f4fd;
   border: none;
-  background-color: #404bbf:
+  background-color: #404bbf;
 }
 
 input[type="checkbox"]:focus-visible + .privacy .privacy-checkbox {
@@ -800,17 +800,29 @@ input[type="checkbox"]:checked
 
 /* #endregion modal window */
 
-/* #region Mobile */
+
+
+
 
 .container {
-  width: 320px;
+  min-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
+
+
+
+Quality
+
+/* #region Mobile */
+
+
 /* #endregion Mobile */
 
 /* #region Table */
-
+ 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -819,7 +831,7 @@ input[type="checkbox"]:checked
 
 /* #endregion Mobile */
 
-/* #region PC */
+/* #region PC*/
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
@@ -827,3 +839,4 @@ input[type="checkbox"]:checked
   }
 }
 /* #endregion PC */
+ 
