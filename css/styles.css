@@ -1,4 +1,18 @@
+.hide {
+  display: none;
+}
+
+
 /* #region body*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -50,11 +64,32 @@ address {
 }
 /* #endregion add reset*/
 
-/* .container {
-  width: 1158px;
+
+.container {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+ 
+.container {
+  min-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
-  padding: 0 15px;
-} */
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+
 
 /* #region header */
 
@@ -218,8 +253,14 @@ button:focus {
 /* #region Quality */
 
 .quality {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .quality {
+  padding-bottom: 120px 0;
+    
+  }
 }
 
 .visually-hidden {
@@ -801,21 +842,6 @@ input[type="checkbox"]:checked
 /* #endregion modal window */
 
 
-
-
-
-.container {
-  min-width: 320px;
-  padding: 0 16px;
-  margin: 0 auto;
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-
-
-Quality
-
 /* #region Mobile */
 
 
@@ -823,20 +849,11 @@ Quality
 
 /* #region Table */
  
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
+
 
 /* #endregion Mobile */
 
 /* #region PC*/
-@media screen and (min-width: 1158px) {
-  .container {
-    width: 1158px;
-    padding: 0 15px;
-  }
-}
+
 /* #endregion PC */
  
