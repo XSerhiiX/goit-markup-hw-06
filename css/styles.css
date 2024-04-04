@@ -506,9 +506,6 @@ button:focus {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  /* flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -518,13 +515,11 @@ button:focus {
     flex-wrap: wrap;
     column-gap: 72px;
     row-gap: 24px;
-    max-width: calc((100% - 24px * 1 ) / 2);
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .portfolio-list {
-    max-width: calc((100% - 24px * 2) / 3);
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
@@ -532,10 +527,19 @@ button:focus {
 }
 
 .portfolio-list-item {
-  display: flex;
-  flex-direction: column;
-  max-width: calc((100% - 24px * 2) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-list-item {
+    max-width: calc((100% - 24px * 1) / 2);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-list-item {
+    max-width: calc((100% - 24px * 2) / 3);
+  }
 }
 
 .portfolio-image {
