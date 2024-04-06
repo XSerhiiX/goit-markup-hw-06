@@ -254,12 +254,11 @@ address {
 
 @media only screen and (min-width: 1158px) {
   .section-head {
-    max-width: 1140px;
+    /* max-width: 1140px; */
     height: 600px;
     padding: 188px 0;
   }
 }
-
 
 .section-head-title {
   max-width: 216px;
@@ -667,6 +666,8 @@ button:focus {
   background-color: #2e2f42;
 }
 
+
+
 @media only screen and (min-width: 1158px) {
   .footer {
     height: 312px;
@@ -676,27 +677,55 @@ button:focus {
 
 .footer-wrapper {
   text-align: center;
-  /* display: flex;
-  flex-direction: column; */
- 
+  display: flex;
+  flex-direction: column;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
   .footer-wrapper {
+    padding: 0 108px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    text-align: left;
     align-items: baseline;
   }
 }
 
-.footer-left {
-  /* width: 262px;
-  height: 112px;
-  margin-right: 120px;*/ */
+@media only screen and (min-width: 1158px) {
+  .footer-wrapper {
+    padding: 0 15px;
+    gap: unset;
+    text-align: left;
+    align-items: baseline;
+    max-width: 1140px;
+  }
 }
+
+.footer-left {
+  margin-bottom: 72px;
+  /* width: 262px;
+  height: 112px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-left {
+    margin: unset;
+    max-width: 264px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-left {
+    margin-right: 120px;
+  }
+}
+
 
 .webstudio.footer-span {
   margin-bottom: 16px;
   display: inline-block;
-  
 }
 
 .footer-studio {
@@ -708,6 +737,23 @@ button:focus {
 .footer-text {
   color: #f4f4fd;
   text-align: left;
+}
+
+.footer-social {
+  max-width: 208px;
+  margin: 0 auto 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-social {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-social {
+    margin-right: 80px;
+  }
 }
 
 .footer-social-text {
@@ -741,8 +787,14 @@ button:focus {
 }
 
 .footer-right-box {
-  /* margin-left: 80px; */
-  
+  margin: 0 auto;
+
+}
+
+@media only screen and (min-width: 768px ) {
+  .footer-right-box {
+    margin: 0;
+  }
 }
 
 .footer-right-text {
@@ -754,7 +806,15 @@ button:focus {
 .footer-right-form {
   display: flex;
   flex-direction: column;
-  /* gap: 24px; */
+  gap: 16px
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-right-form {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 
 .footer-right-label {
@@ -764,11 +824,11 @@ button:focus {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  
+
 }
 
 .footer-right-input {
-  max-width: 264px;
+  width: 288px;
   max-height: 40px;
   font-size: 12px;
   line-height: 2;
@@ -780,8 +840,16 @@ button:focus {
   background-color: transparent;
   outline: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-right-input {
+    opacity: 1;
+    width: 264px;
+  }
 }
 
 input::placeholder {
@@ -789,6 +857,13 @@ input::placeholder {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 1158px) {
+  input::placeholder {
+    opacity: 1;
+  }
 }
 
 .footer-right-button {
@@ -799,7 +874,6 @@ input::placeholder {
 
   border-radius: 4px;
   padding: 8px 24px;
-  min-width: 165px;
   height: 100%;
   display: inline-flex;
   align-items: center;
@@ -809,6 +883,14 @@ input::placeholder {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+@media only screen and (min-width: 1158px) {
+  .footer-right-button {
+      width: 165px;
+  }
+}
+  
 
 .footer-right-icon {
   margin-left: 16px;
@@ -1032,16 +1114,71 @@ input[type="checkbox"]:checked
 /* #endregion modal window */
 
 
-/* #region Mobile */
+/* #region Mobile menu */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 72px 16px 40px 16px; 
+}
+
+.mobile-menu-button.mobile-menu-button {
+  position:absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  background: transparent;
+}
+
+.mobile-menu-icon {
+  fill: #2e2f42;
+}
+
+.header-link {}
+
+.link-send {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11; 
+    color: #2e2f42;
+}
+
+.elect {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #404bbf;
+  
+}
+
+.address-contact {}
+
+.menu-address {}
+
+.link-address .elect-adress{}
+
+.link-address {}
+
+.team-icon-list {}
+
+.menu-social {}
+
 
 
 /* #endregion Mobile */
+
+
+
+
 
 /* #region Table */
  
 
 
-/* #endregion Mobile */
+/* #endregion Table */
 
 /* #region PC*/
 
