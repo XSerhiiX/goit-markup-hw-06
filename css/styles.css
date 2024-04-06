@@ -2,7 +2,6 @@
   display: none;
 }
 
-
 /* #region body*/
 *,
 *::before,
@@ -75,12 +74,11 @@ address {
 }
 /* #endregion add reset*/
 
-
 .container {
   outline: 2px solid red;
   outline-offset: -2px;
 }
- 
+
 .container {
   min-width: 320px;
   padding: 0 16px;
@@ -100,12 +98,12 @@ address {
   }
 }
 
-
 /* #region header */
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-box {
@@ -211,10 +209,10 @@ address {
   }
 }
 
-.button-menu{
+.button-menu {
   margin-right: 0;
-    border: none;
-     background-color: #fff;
+  border: none;
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 767.98px) {
@@ -224,7 +222,7 @@ address {
 }
 
 .button-menu-icon {
-  fill: #2F2F37;
+  fill: #2f2f37;
 }
 
 /* #endregion header*/
@@ -290,7 +288,6 @@ button {
   margin: 0 auto;
 }
 
-
 .head-btn {
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -309,7 +306,6 @@ button:focus {
   background-color: #404bbf;
 }
 
-
 /* #endregion head */
 
 /* #region Quality */
@@ -326,7 +322,7 @@ button:focus {
 
 @media only screen and (min-width: 1158px) {
   .quality {
-  padding: 120px 0;
+    padding: 120px 0;
   }
 }
 
@@ -348,7 +344,6 @@ button:focus {
   display: flex;
   flex-direction: column;
   row-gap: 72px;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -385,14 +380,14 @@ button:focus {
 @media only screen and (min-width: 1158px) {
   .quality-item-icon {
     height: 112px;
-      max-width: 100%;
-      margin-bottom: 8px;
-      background-color: #f4f4fd;
-      border: 1px solid #8e8f99;
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    max-width: 100%;
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -426,7 +421,7 @@ button:focus {
 
 @media only screen and (min-width: 1158px) {
   .quality-item-text {
-      font-weight: 400;
+    font-weight: 400;
   }
 }
 
@@ -437,8 +432,8 @@ button:focus {
 .team {
   padding: 96px 0;
   background-color: #f4f4fd;
- 
- /* 
+
+  /* 
   width: 1158px;
   margin: 0 auto; */
 }
@@ -454,7 +449,7 @@ button:focus {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  color: #2e2f42; 
+  color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
 }
@@ -467,7 +462,7 @@ button:focus {
 }
 
 @media only screen and (min-width: 768px) {
-  .team-list  {
+  .team-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -485,14 +480,13 @@ button:focus {
   }
 }
 
-.team-item { 
+.team-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0          1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
 }
-
 
 .team-wrapper {
   padding: 32px 0 32px;
@@ -507,7 +501,7 @@ button:focus {
   margin-bottom: 8px;
 }
 
-.team-text { 
+.team-text {
   padding-bottom: 8px;
 }
 
@@ -666,8 +660,6 @@ button:focus {
   background-color: #2e2f42;
 }
 
-
-
 @media only screen and (min-width: 1158px) {
   .footer {
     height: 312px;
@@ -721,7 +713,6 @@ button:focus {
     margin-right: 120px;
   }
 }
-
 
 .webstudio.footer-span {
   margin-bottom: 16px;
@@ -788,10 +779,9 @@ button:focus {
 
 .footer-right-box {
   margin: 0 auto;
-
 }
 
-@media only screen and (min-width: 768px ) {
+@media only screen and (min-width: 768px) {
   .footer-right-box {
     margin: 0;
   }
@@ -806,8 +796,7 @@ button:focus {
 .footer-right-form {
   display: flex;
   flex-direction: column;
-  gap: 16px
-  
+  gap: 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -824,7 +813,6 @@ button:focus {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-
 }
 
 .footer-right-input {
@@ -884,13 +872,11 @@ input::placeholder {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 @media only screen and (min-width: 1158px) {
   .footer-right-button {
-      width: 165px;
+    width: 165px;
   }
 }
-  
 
 .footer-right-icon {
   margin-left: 16px;
@@ -908,7 +894,8 @@ input::placeholder {
   height: 100%;
   z-index: 999;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -949,11 +936,13 @@ input::placeholder {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2e2f42;
 }
 
-.modal-close-button:hover, .modal-close-button:focus {
+.modal-close-button:hover,
+.modal-close-button:focus {
   color: #fff;
   background-color: #404bbf;
   border: none;
@@ -1078,8 +1067,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  fill cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input[type="checkbox"]:checked + .privacy .privacy-checkbox {
@@ -1099,7 +1087,8 @@ input[type="checkbox"]:focus-visible + .privacy .privacy-checkbox {
 }
 
 input[type="checkbox"]:checked
-  + .privacy > .privacy-checkbox
+  + .privacy
+  > .privacy-checkbox
   > .privacy-checkbox-icon {
   opacity: 1;
 }
@@ -1113,7 +1102,6 @@ input[type="checkbox"]:checked
 
 /* #endregion modal window */
 
-
 /* #region Mobile menu */
 .mobile-menu {
   position: fixed;
@@ -1122,11 +1110,11 @@ input[type="checkbox"]:checked
   width: 100%;
   height: 100%;
   background-color: #fff;
-  padding: 72px 16px 40px 16px; 
+  padding: 72px 16px 40px 16px;
 }
 
 .mobile-menu-button.mobile-menu-button {
-  position:absolute;
+  position: absolute;
   top: 24px;
   right: 24px;
   padding: 0;
@@ -1137,50 +1125,43 @@ input[type="checkbox"]:checked
   fill: #2e2f42;
 }
 
-.header-link {}
-
-.link-send {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11; 
-    color: #2e2f42;
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
-.elect {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    color: #404bbf;
-  
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
 }
 
-.address-contact {}
+.mobile-menu-link.elect-link {
+  color: #404bbf;
+}
 
-.menu-address {}
+.address-contact {
+}
 
-.link-address .elect-adress{}
+.menu-address {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #4d5ae5;
+}
+.menu-address .menu-tel {
+  color: #434455;
+}
 
-.link-address {}
-
-.team-icon-list {}
-
-.menu-social {}
-
-
+.menu-address-tel .menu-social {
+}
 
 /* #endregion Mobile */
 
-
-
-
-
 /* #region Table */
- 
-
 
 /* #endregion Table */
 
 /* #region PC*/
 
 /* #endregion PC */
- 
