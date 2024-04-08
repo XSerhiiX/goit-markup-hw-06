@@ -74,10 +74,10 @@ address {
 }
 /* #endregion add reset*/
 
-.container {
+/* .container {
   outline: 2px solid red;
   outline-offset: -2px;
-}
+} */
 
 .container {
   min-width: 320px;
@@ -87,13 +87,13 @@ address {
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    min-width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -606,8 +606,8 @@ button:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 72px;
-    row-gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 }
 
@@ -725,7 +725,7 @@ button:focus {
     gap: unset;
     text-align: left;
     align-items: baseline;
-    max-width: 1140px;
+    width: 1158px;
   }
 }
 
